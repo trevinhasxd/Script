@@ -1,3 +1,4 @@
+
 --[[Config]]
 powersave = 350
 --Lua itsnt getting protect so im gonna leave it alone
@@ -7,12 +8,11 @@ if cloudata[1] == 'Sam'
 and
     cloudata[2] == '19847o9394'
 then
-    Choose()
 else
     print('Auth Failed!')
     os.exit()
 end
-
+ 
 while(true) do
 if
 gg.isVisible(true)
@@ -23,7 +23,7 @@ menu = gg.choice({
 'CJZC',
 'OTHER',
 'EXIT'
-},nil,'Choose Your script you want to get\nMade by sam\nNote:\nIf the Script is asking for internet then just press 'yes'')
+},nil,'Choose Your script you want to get\nMade by sam')
 if menu == 1 then
 gg.alert('PUBG','')
 end
@@ -35,8 +35,7 @@ gg.alert('Choose File:','')
 end
 if menu==4 then os.exit() end
 gg.toast('Script Hided.')
-gg.setVisible('false')
+gg.setVisible(false)
 end
 gg.sleep(powersave)
 end
-
