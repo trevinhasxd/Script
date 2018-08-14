@@ -1,9 +1,5 @@
 
---[[Config]]
 powersave = 350
---Lua itsnt getting protect so im gonna leave it alone
---Welcome to view my example but leave me a crdit 4 it
---first test 14/8 14:21 GMT+8
 if cloudata[1] == 'Sam'
 and
     cloudata[2] == '19847o9394'
