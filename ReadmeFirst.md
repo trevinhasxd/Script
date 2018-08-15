@@ -11,6 +11,16 @@ TL.Lua is controll Script’s time limit.The Script will come up amd check is th
 SS.Lua is important
 it will check is the Script avalible
 
-dacode.Lua is decrept the encypted code
+dacode.Lua is decrept the encypted code,without this the Script itself cant work.
+
+Let me Explain
+
+I let the Script to become a ‘client’.And if you need to access the real script u have to connect to the network.
+
+Good:to Stop the decrypter,they can only crack the script stats,even its useless for me
+I can Decrept 100 times to the client then theyll fucked up
+
+Bad:if they got url they will get the cloud script.Even i have encrypted.
+If you dont have network connection then bye bye
 
 
