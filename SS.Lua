@@ -6,4 +6,4 @@ How to use:
 4 = Time Limited
 ]]
 —Please enter a value down there
-1
+2
