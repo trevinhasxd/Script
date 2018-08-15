@@ -11,3 +11,6 @@ TL.Lua is controll Script’s time limit.The Script will come up amd check is th
 SS.Lua is important
 it will check is the Script avalible
 
+dacode.Lua is decrept the encypted code
+
+
