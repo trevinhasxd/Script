@@ -1,0 +1,15 @@
+
+local file = gg.makeRequest('https://yourgithubfile.com/file.lua') -- replace with your file link
+
+if file.content == nil or
+	file.content == '' then
+	os.exit()
+end
+
+local load =
+	load(file.content)
+if load == nil then
+	os.exit()
+end
+	load()
+Like this
