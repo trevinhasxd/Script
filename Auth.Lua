@@ -1,5 +1,3 @@
-
-powersave = 350
 if cloudata[1] == 'Sam'
 and
     cloudata[2] == '19847o9394'
