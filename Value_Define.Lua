@@ -15,4 +15,6 @@ local gusername1= '@DESPAC1T0#6969'
 local gusername2= '@peter00f#9823'
 local gacclist = {gusername1,gusername2}
 local powersave = 350
+local authpwdA='19847o9394'
+local authpwdB='hsi289a;/@ie'
 
