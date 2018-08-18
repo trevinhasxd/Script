@@ -1,13 +1,6 @@
 
 
 powersave = 350
-if cloudata[1] == '19847o9394'
-then
-else
-    print('Auth Failed!')
-    os.exit()
-end
-
 function PUBG()
 local PUBGSC = gg.makeRequest('')
 if type(PUBGSC) == 'string' then
