@@ -1,13 +1,5 @@
--------------------
---     os.exit()      ---
---print(os.exit()) ---
---password = nil ---
--------------------
----
---function arena
----Auth failed
+
 function badauth() if gtrychance ==0 then Brocastsos=os.date"content=[%d-%Y][%H:%M](   ⚠!!!WARNING!!!⚠     SOMEONE is trying to login to the server!Please be careful!If nesscessy,please freeze the Script!)" gg.makeRequest(Brocast,nil,Brocastsos) gbadlogin=1 end end
---Auth for DESPAC1T0
 function DESPAC1T0()
 if gtrychance==0 then gCuser() end 
 AuthKeyA=gg.prompt({"Dont touch,Vaild code","Dont touch,Connect code","Enter Your code:",nil},{[1]=VaildKeyA,[2]='2020',[3]=''},{[1]='number',[2]='number',[3]='text'}) 
@@ -20,7 +12,6 @@ elseif WrongAlertIsHere ==2 then gCuser()
 end 
 end 
 end
---Auth for peter00f
 function peter00f()
 if gtrychance==0 then gCuser() end 
 AuthKeyA=gg.prompt({"Dont touch,Vaild code","Dont touch,Connect code","Enter Your code:",nil},{[1]=VaildKeyA,[2]='2020',[3]=''},{[1]='number',[2]='number',[3]='text'}) 
@@ -33,7 +24,6 @@ elseif WrongAlertIsHere ==2 then gCuser()
 end 
 end 
 end
---Account chooser
 function gCuser()
 if gtrychance==0 then badauth() end
 local glogin=gg.choice(gacclist,nil,"Choose your account\nApps chosen: "..gappsnow['label'])
@@ -45,4 +35,3 @@ end
 if glogin == nil then gbadlogin=1 end
 end
 gCuser()
---
