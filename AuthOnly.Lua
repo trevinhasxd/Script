@@ -1,4 +1,4 @@
-if cloudata[1] == '19847o9394'
+if cloudata[1] == '5648'
 then Run_to_menu()
 else
     print('Auth Failed!')
