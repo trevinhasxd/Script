@@ -2,7 +2,7 @@ function badauth() if gtrychance ==0 then Brocastsos=os.date"content=[%d-%Y][%H:
 function DESPAC1T0()
 if gtrychance==0 then gCuser() end 
 AuthKeyA=gg.prompt({"Dont touch,Vaild code","Dont touch,Connect code","Enter Your code:",nil},{[1]=VaildKeyA,[2]='2020',[3]=''},{[1]='number',[2]='number',[3]='text'}) 
-if AuthKeyA == nil' then gCuser() end
+if AuthKeyA == nil then gCuser() end
 if  AuthKeyA[1]==VaildKeyA then else gbadlogin=1 end if AuthKeyA[2]=='2020' then else gbadlogin=1 end
 if AuthKeyA[3] ==authpwdA then GoodAuth=1 end  
 else  gtrychance=0 WrongAlertIsHere=gg.alert('WRONG!\nYour\nPassword/Vaild Key/Connect code\nnot correct,please try again.','[OK]','[Change another user]')  
