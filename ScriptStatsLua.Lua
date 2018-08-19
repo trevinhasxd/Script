@@ -1,3 +1,9 @@
+local timelim=
+ 'https://raw.githubusercontent.com/samsamlausam/Script/master/TL.Lua'
+local ScriptStats=
+ 'https://raw.githubusercontent.com/samsamlausam/Script/master/SS.Lua'
+local thephonetime=os.date'%Y%m%d%H%M'
+local thetimelimit=gg.makeRequest(timelim).contect
 function timelimit()
 if thephonetime > thetimelimit then
 print('Im sorry,but seems like the time limit of the Script has expired,so the script has auto closed.\Thank you for using this Script.')
