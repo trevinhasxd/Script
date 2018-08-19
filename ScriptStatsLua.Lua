@@ -11,7 +11,6 @@ os.exit()
 elseif thephonetime < thetimelimit then
 end
 end
-gg.setVisible(false)
 local SC = gg.makeRequest(ScriptStats).content 
 if SC==nil then
 gg.alert('Err:Script Cannot avalible because Script stats are unknown.')
