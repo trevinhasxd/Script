@@ -1,3 +1,4 @@
+local powersave=350
 function PUBG()
 local PUBGSC = gg.makeRequest('')
 if type(PUBGSC) == 'string' then
