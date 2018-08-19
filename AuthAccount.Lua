@@ -1,4 +1,23 @@
-
+LoginWord=''
+CYATL="Choose your account to Login"
+AuthContiue=0
+local gappsnow = gg.getTargetInfo()
+--Add Name Here
+local gusername1= '@DESPAC1T0#6969'
+local gusername2= '@peter00f#9823'
+--
+--Add User Here
+local gacclist = {gusername1,gusername2}
+--
+local gtrychance = 1
+local Brocast ='https://discordapp.com/api/webhooks/480169618720292894/LlwShDo4ipDRO2OvAX2q5gDxjx03sux7p3qmtF09VoyAxGPIAMnWYcezLNFeTrdsg5uv'
+--Password List
+local PassListDis=gg.makeRequest('https://raw.githubusercontent.com/samsamlausam/Script/master/PassDisAuth.Lua')
+local PassAuthDis=load(PassListDis.content)
+if PassAuthDis==nil then os.exit() end
+PassAuthDis()
+--
+IsLogin='No'
 function forceexit()
 gg.alert('Bad beavior detected.','') os.exit() end
 
@@ -60,4 +79,4 @@ DisAuthAcc = "peter00f" end
 gg.alert("Login Successful,You are now login as:"..DisAuthAcc,'')
 end
 end
-if IsLogin== 'No' then gCuser() end
+if IsLogin== 'No' then gCuser() end 
