@@ -14,19 +14,23 @@ local PassListDis=gg.makeRequest('https://raw.githubusercontent.com/samsamlausam
 local PassAuthDis=load(PassListDis.content)
 if PassAuthDis==nil then os.exit() end
 PassAuthDis()
---function
+--function--
+--Login Successful
 function GoodAuthMsg()
 gg.alert("Login Successful,\nYou are now login as:\n"..DisAuthAcc,'')
 end
+--Exit
 function forceexit()
 gg.alert('Bad beavior detected.','') os.exit() end
+--Send Alert
 function badauth() 
 if GoodAuth ==1 or GoodAuth == 2 then end
 if gtrychance ==0 then
-Brocastsos=os.date"content=[%d-%Y][%H:%M](⚠!!!WARNING!!!⚠     SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!)" 
+Brocastsos=os.date"username=⚠!!!WARNING!!!⚠&content=[%d-%Y][%H:%M] SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!" 
 gg.makeRequest(Brocast,nil,Brocastsos) 
 gg.toast('WRONG!\nYour Password not correct.')
 forceexit() end end
+--UserLoginSystem
 function DESPAC1T0()
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
@@ -40,14 +44,16 @@ function peter00f()
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
 if  AuthKeyA[1]==authpwdB then GoodAuth=2 GoodAuthMsg() end
-if AuthKeyA[1] ~= authpwdB then gtrychance=0
+if AuthKeyA[1] ~= authpwdB then 
+gtrychance=0
 gCuser()
 end
 end 
+--Login Menu
 function gCuser()
 if gtrychance==0 then badauth() end
 glogin=gg.choice(gacclist,nil,"Choose your account to Login\nApps chosen: "..gappsnow['label'])
-if glogin ~= 1 and 2 then forceexit() end
+if glogin ~= 1 and glogin ~= 2 then forceexit() end
 if  glogin== 1 then 
 DisAuthAcc = "DESPAC1T0"
 elseif glogin == 2 then 
