@@ -5,13 +5,15 @@ if  glogin== 1 then
 DisAuthAcc = 'DESPAC1T0'
 elseif glogin == 2 then 
 DisAuthAcc = 'peyer00f' end
-Brocastsos=os.date"content=[%d-%Y][%H:%M](   ⚠!!!WARNING!!!⚠     SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!)" gg.makeRequest(Brocast,nil,Brocastsos) gbadlogin=1 end end
+Brocastsos=os.date"content=[%d-%Y][%H:%M](   ⚠!!!WARNING!!!⚠     SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!)" gg.makeRequest(Brocast,nil,Brocastsos) forceexit() end end
 function DESPAC1T0()
 if gtrychance==0 then gCuser() end 
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]=''},{[1]='text') 
 if AuthKeyA == nil then forceexit() end
 if  AuthKeyA[1]== authpwdA then GoodAuth=1
-else gtrychance=0 WrongAlertIsHere=gg.alert('WRONG!\nYour\nPassword/Vaild Key/Connect code\nnot correct.','[OK]')  end
+else gtrychance=0 WrongAlertIsHere=gg.alert('WRONG!\nYour Password not correct.','[OK]')  end
+gtrychance=0
+badauth()
 end 
 end
 function peter00f()
@@ -20,10 +22,11 @@ AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]=''},{[1]='text'})
 if AuthKeyA == nil then forceexit() end
 if  AuthKeyA[1]==authpwdB then GoodAuth=2 
 else WrongAlertIsHere=gg.alert(
-'WRONG!\nYour\nPassword/Vaild Key/Connect code\nnot correct.',
+'WRONG!\nYour Password not correct,please try again.',
 '[OK]'
 )
  gtrychance=0
+badauth()
 end 
 end
 function gCuser()
