@@ -34,9 +34,8 @@ if gtrychance==0 then gCuser() end
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
 if  AuthKeyA[1]== authpwdA then GoodAuth=1 end
-if AuthKeyA[1]=="Code..." or AuthKeyA[1]==nil then 
+if AuthKeyA[1]=="Code..." or AuthKeyA[1]==nil then end
 gtrychance = 0
-badauth() end
 gCuser()
 end 
 
@@ -45,7 +44,7 @@ if gtrychance==0 then gCuser() end
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
 if  AuthKeyA[1]==authpwdB then GoodAuth=2 end
-if AuthKeyA[1]=="Code..." or AuthKeyA[1]==nil then gtrychance=0 badauth() end
+if AuthKeyA[1]=="Code..." or AuthKeyA[1]==nil then end gtrychance=0
 gCuser()
 end 
 function AuthCont()
