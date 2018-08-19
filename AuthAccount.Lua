@@ -1,4 +1,3 @@
-if (debug.getinfo(2) ~= nil) then gg.alert('...','') gg.alert('The hook...','') gg.alert('Comeon,dont hook my Script,theres nothing to see.','') print('Get your hook out before you use my script.') os.exit() end
 --Values
 local gtrychance = 1
 local Brocast ='https://discordapp.com/api/webhooks/480169618720292894/LlwShDo4ipDRO2OvAX2q5gDxjx03sux7p3qmtF09VoyAxGPIAMnWYcezLNFeTrdsg5uv'
