@@ -1,23 +1,24 @@
-LoginWord=''
-CYATL="Choose your account to Login"
+if (debug.getinfo(2) ~= nil) then gg.alert('...','') gg.alert('The hook...','') gg.alert('Comeon,dont hook my Script,theres nothing to see.','') print('Get your hook out before you use my script.') os.exit() end
+--Values
+local gtrychance = 1
+local Brocast ='https://discordapp.com/api/webhooks/480169618720292894/LlwShDo4ipDRO2OvAX2q5gDxjx03sux7p3qmtF09VoyAxGPIAMnWYcezLNFeTrdsg5uv'
 AuthContiue=0
 local gappsnow = gg.getTargetInfo()
+gg.setVisible(false)
 --Add Name Here
 local gusername1= '@DESPAC1T0#6969'
 local gusername2= '@peter00f#9823'
---
 --Add User Here
 local gacclist = {gusername1,gusername2}
---
-local gtrychance = 1
-local Brocast ='https://discordapp.com/api/webhooks/480169618720292894/LlwShDo4ipDRO2OvAX2q5gDxjx03sux7p3qmtF09VoyAxGPIAMnWYcezLNFeTrdsg5uv'
 --Password List
 local PassListDis=gg.makeRequest('https://raw.githubusercontent.com/samsamlausam/Script/master/PassDisAuth.Lua')
 local PassAuthDis=load(PassListDis.content)
 if PassAuthDis==nil then os.exit() end
 PassAuthDis()
---
-IsLogin='No'
+--function
+function GoodAuthMsg()
+gg.alert("Login Successful,\nYou are now login as:\n"..DisAuthAcc,'')
+end
 function forceexit()
 gg.alert('Bad beavior detected.','') os.exit() end
 
@@ -30,32 +31,27 @@ gg.toast('WRONG!\nYour Password not correct.')
 forceexit() end end
 
 function DESPAC1T0()
-if gtrychance==0 then gCuser() end 
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
-if  AuthKeyA[1]== authpwdA then GoodAuth=1 end
-if AuthKeyA[1]=="Code..." or AuthKeyA[1]==nil then end
+if  AuthKeyA[1]== authpwdA then GoodAuth=1 GoodAuthMsg() end
+if AuthKeyA[1] ~= authpwdA then
 gtrychance = 0
 gCuser()
+end
 end 
 
 function peter00f()
-if gtrychance==0 then gCuser() end 
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
-if  AuthKeyA[1]==authpwdB then GoodAuth=2 end
-if AuthKeyA[1]=="Code..." or AuthKeyA[1]==nil then end gtrychance=0
+if  AuthKeyA[1]==authpwdB then GoodAuth=2 GoodAuthMsg() end
+if AuthKeyA[1] ~= authpwdB then gtrychance=0
 gCuser()
-end 
-function AuthCont()
-if AuthContiue==1 then IsLogin='Yes'
-gacclist={} LoginWord='\n\n\n\nPress Anywhere to Contiue,'..DisAuthAcc..'\n' CYATL="Logged as:"..DisAuthAcc end
 end
+end 
 function gCuser()
-if GoodAuth ==1 or GoodAuth ==2 then AuthContiue=1
- AuthCont() end
 if gtrychance==0 then badauth() end
-glogin=gg.choice(gacclist,nil,CYATL.."\nApps chosen: "..gappsnow['label']..LoginWord)
+glogin=gg.choice(gacclist,nil,"Choose your account to Login\nApps chosen: "..gappsnow['label'])
+if glogin ~= 1 and 2 then forceexit() end
 if  glogin== 1 then 
 DisAuthAcc = "DESPAC1T0"
 elseif glogin == 2 then 
@@ -65,17 +61,5 @@ end
 if glogin ==2 
 then peter00f()
 end
-if IsLogin=='Yes' then else
-if glogin == nil then forceexit() end
-end end
-function AuthLife()
-if IsLogin=='Yes' then else gCuser() end
-if GoodAuth == 1 or GoodAuth == 2 then
-if  glogin== 1 then 
-DisAuthAcc = "DESPAC1T0"
-elseif glogin == 2 then 
-DisAuthAcc = "peter00f" end
-gg.alert("Login Successful,You are now login as:"..DisAuthAcc,'')
 end
-end
-if IsLogin== 'No' then gCuser() end 
+if GoodAuth ~= 1 or GoodAuth ~= 2 then gCuser() elseif GoodAuth==1 or GoodAuth==2 then end
