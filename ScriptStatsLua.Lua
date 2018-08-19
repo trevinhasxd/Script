@@ -26,4 +26,3 @@ gg.toast('Error:Script LOCKED')
 gg.alert('Script URGENT error:Script LOCKED!\nYou cannot use the script until unlocked.')
 os.exit()
 end
-end
