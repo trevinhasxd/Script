@@ -11,8 +11,6 @@ os.exit()
 elseif (thephonetime < thetimelimit) then
 end
 end
-::Loopss::
-for i=1, 300 do
 gg.setVisible(false)
 local SC = gg.makeRequest(ScriptStats).content 
 if SC==nil then
@@ -28,6 +26,5 @@ print('Script LOCKED!!!')
 gg.toast('Error:Script LOCKED')
 gg.alert('Script URGENT error:Script LOCKED!\nYou cannot use the script until unlocked.')
 os.exit()
-end
 end
 end
