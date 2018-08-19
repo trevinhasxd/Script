@@ -1,0 +1,27 @@
+function timelimit()
+if thephonetime > thetimelimit then
+print('Im sorry,but seems like the time limit of the Script has expired,so the script has auto closed.\Thank you for using this Script.')
+os.exit()
+elseif thephonetime < thetimelimit then
+end
+end
+::Loopss::
+for i=1, 300 do
+gg.setVisible(false)
+local SC = gg.makeRequest(ScriptStats).content 
+if SC==nil then
+gg.alert('Err:Script Cannot avalible because Script stats are unknown.')
+os.exit()
+elseif SC== '1' then
+elseif SC== '2' then print('Script Unavalible:Script has set to cannot use.')
+os.exit()
+elseif SC== '4' then
+timelimit()
+elseif SC== '3' then
+print('Script LOCKED!!!')
+gg.toast('Error:Script LOCKED')
+gg.alert('Script URGENT error:Script LOCKED!\nYou cannot use the script until unlocked.')
+os.exit()
+end
+end
+end
