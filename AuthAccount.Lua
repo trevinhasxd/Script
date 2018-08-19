@@ -20,7 +20,6 @@ gg.alert("Login Successful,\nYou are now login as:\n"..DisAuthAcc,'')
 end
 function forceexit()
 gg.alert('Bad beavior detected.','') os.exit() end
-
 function badauth() 
 if GoodAuth ==1 or GoodAuth == 2 then end
 if gtrychance ==0 then
@@ -28,7 +27,6 @@ Brocastsos=os.date"content=[%d-%Y][%H:%M](⚠!!!WARNING!!!⚠     SOMEONE is try
 gg.makeRequest(Brocast,nil,Brocastsos) 
 gg.toast('WRONG!\nYour Password not correct.')
 forceexit() end end
-
 function DESPAC1T0()
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
@@ -38,7 +36,6 @@ gtrychance = 0
 gCuser()
 end
 end 
-
 function peter00f()
 AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]='Code...'},{[1]='text'}) 
 if AuthKeyA == nil then forceexit() end
