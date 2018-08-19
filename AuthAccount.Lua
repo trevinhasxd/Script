@@ -22,10 +22,10 @@ AuthKeyA=gg.prompt({"Enter Your code:",nil},{[1]=''},{[1]='text'})
 if AuthKeyA == nil then forceexit() end
 if  AuthKeyA[1]==authpwdB then GoodAuth=2 
 else WrongAlertIsHere=gg.alert(
-'WRONG!\nYour Password not correct,please try again.',
+'WRONG!\nYour Password not correct.',
 '[OK]'
 )
- gtrychance=0
+gtrychance=0
 badauth()
 end 
 end
