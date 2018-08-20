@@ -1,6 +1,9 @@
 if cloudata[1] == '5648'
 then Run_to_menu()
 else
+    gg.toast('Vailding Code....')
+    gg.getFile()
+    gg.alert('script error: org.luaj.vm2.LuaError: trying to load Auth password.,'')
     print('Auth Failed!')
     os.exit()
 end
