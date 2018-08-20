@@ -30,12 +30,10 @@ end
 othermainmenugui=gg.choice(othergui,nil,'Choose Your function\nMade by sam\nApps Selected: '..gappsnow['label']..'\nLogged as: '..DisAuthAcc)
 if othermainmenugui==1 then gg.alert('Coming soon!Stats:Moving code','') Menu() end
 if othermainmenugui==2 then
-gg.toast('Open user function gui')
 USERFUNGUI=
 gg.choice(USERFUN,nil,'Choose Your function\nMade by sam\nApps Selected: '..gappsnow['label']..'\nLogged as: '..DisAuthAcc)
 if DisAuthAcc=='DESPAC1T0' then
 --Function for DESPAC1T0
-gg.toast('the whole function is down')
  if USERFUN==1 then goto webhooksend end
 ::webhooksend::
 if sendmsgusingwebh==nil then cancelenv() end
@@ -51,7 +49,8 @@ savemsg3='Message'
 savemsg4=false
 end
 sendmsgusingwebh=gg.prompt({'Type your name:','Link for photo(Default is message blob)','Type your message','Save message',nil},{[1]=savemsg1,[2]=savemsg2,[3]=savemsg3,[4]=savemsg4},{[1]='text',[2]='text',[3]='text',[4]='checkbox'}) --'
-if sendmsgusingwebh ==4 or sendmsgusingwebh[1] ==nil or sendmsgusingwebh[2] ==nil or sendmsgusingwebh[3] ==nil or sendmsgusingwebh[4] ==nil then cancelenv() end
+if sendmsgusingwebh ==4 or sendmsgusingwebh[1] ==nil or sendmsgusingwebh[2] ==nil or sendmsgusingwebh[3] ==nil or sendmsgusingwebh[4] ==nil then cancelenv() 
+elseif sendmsgusingwebh==nil then cancelenv() end
 choosewebhook=gg.choice({'#gen','#script_stats(Default)','#custom_script_update','#type-command','#rules'},nil,'Choose Where the message you want to send')
 if  choosewebhook==1 then webhooksending=webhook1 elseif choosewebhook==2 then webhooksending=webhook2 elseif choosewebhook==3 then webhooksending=webhook3 elseif choosewebhook==4 then webhooksending=webhook4 elseif choosewebhook==5 then webhooksending=webhook5 
 else webhooksending=webhook2 end
@@ -66,7 +65,6 @@ if choosewebhook==1 then webhookselected='#gen' elseif  choosewebhook==2 then we
 msgpreview=gg.alert('Preview:\nWebhook='..webhookselected..'\n'..themessagetosend,'[Send]','[Change Message]')
 if msgpreview==1 then
 gg.toast('Sending...')
-gg.alert('webhook: \n'..webhooksending..'\nPOST detail:\n'..themessagetosend)
 gg.makeRequest(webhooksending,nil,themessagetosend)
 gg.toast('Message sent')
 goto webhooksend
