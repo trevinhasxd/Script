@@ -4,23 +4,27 @@ Before you use the public res,i have to say this out
 
 about every file meaning:
 
-PA.Lua is the main code file,the file is encrypted and i beg you dont decrypt.
+AboutSS.md is about how to use SS.Lua
 
-TL.Lua is controll Script’s time limit.The Script will come up amd check is the time expired.If the Time is expired,the Script will Stop you to using the Script.
+SS.Lua is check the Script Stats
 
-SS.Lua is important
-it will check is the Script avalible
+TL.Lua is set the Client TimeLimit.only work if the client is set to time limited
 
-dacode.Lua is decrept the encypted code,without this the Script itself cant work.
+Value_Define.Lua is load the client's Value,without this Script,the Client won't work
 
-Let me Explain
+PassDisAuth.Lua is Defineing the password of Auth
 
-I let the Script to become a ‘client’.And if you need to access the real script u have to connect to the network.
+PUBGstats.Lua is check PUBG Script stats,is that useable or not.1 is avalible,0 is unavalible
 
-Good:to Stop the decrypter,they can only crack the script stats,even its useless for me
-I can Decrept 100 times to the client then theyll fucked up
+CJZCstats.Lua is same as PUBGstats.Lua
 
-Bad:if they got url they will get the cloud script.Even i have encrypted.
-If you dont have network connection then bye bye
+AuthAccount.Lua is the Main Auth Script,without it the cilent won't work
+
+CheckNetwork.Lua is just a value that equal to 1,let the client to check is the client connected to network
+
+MainMenu.Lua --MainMenu for Client,the main code.
+
+Menu is for DESPAC1T0 only.
 
 
+--More will add when new file is added.
