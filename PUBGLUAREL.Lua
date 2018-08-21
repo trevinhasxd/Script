@@ -12,10 +12,11 @@ function HOME()
     Mobile()
   end
   if HM == 3 then
-    cancelenv()
+  iwannagobackmenu=1
   end
   HOMEDM = -1
 end
+
 function NEWBAYPASS()
   gg.toast("BYPASS WORKING")
   gg.searchNumber("1.2F;1.8F:9::1", gg.TYPE_DOUBLE, false, gg.SIGN_EQUAL, 0, -1)
@@ -1373,11 +1374,16 @@ function TW()
 
 end
 while true do
+  if iwannagobackmenu==1 then
+  goto cancelenvplzhdhd
+ else
   if gg.isVisible(true) then
     HOMEDM = 1
     gg.setVisible(false)
   end
   if HOMEDM == 1 then
     HOME()
+    end
   end
 end
+        ::cancelenvplzhdhd::
