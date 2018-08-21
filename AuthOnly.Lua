@@ -14,8 +14,6 @@ end
 first2()
 end
 end
-cloudata='5648'
-
 if cloudata== '5648'
 then Run_to_menu()
 else
