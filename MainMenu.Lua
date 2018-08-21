@@ -1,4 +1,3 @@
-gappsnow = gg.getTargetInfo()
 local othergui={'Learning','Script for '..DisAuthAcc}
 local webhook1='https://discordapp.com/api/webhooks/480748861745397780/i0-yRzmLn6Q-CQY_Kg5b1Feaxe14FDc5h8xOU0vKumBM8GKft88dvjDPZdpl5qxv0F2r'
 local webhook2='https://discordapp.com/api/webhooks/480169618720292894/LlwShDo4ipDRO2OvAX2q5gDxjx03sux7p3qmtF09VoyAxGPIAMnWYcezLNFeTrdsg5uv'
@@ -26,6 +25,7 @@ gg.alert('Script Maker Didnt update his Script,\nAvalible when Script Maker Uplo
 end
  
 function Menu()
+gappsnow = gg.getTargetInfo()
 if DisAuthAcc=='DESPAC1T0' then
 USERFUN={'Send Message Using Webhook'}
 end
