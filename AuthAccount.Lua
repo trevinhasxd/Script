@@ -2,7 +2,7 @@
 local gtrychance = 1
 local Brocast ='https://discordapp.com/api/webhooks/480169618720292894/LlwShDo4ipDRO2OvAX2q5gDxjx03sux7p3qmtF09VoyAxGPIAMnWYcezLNFeTrdsg5uv'
 AuthContiue=0
-local gappsnow = gg.getTargetInfo()
+gappsnow = gg.getTargetInfo()
 gg.setVisible(false)
 --Add Name Here
 local gusername1= '@DESPAC1T0#6969'
@@ -11,7 +11,6 @@ local gusername2= '@peter00f#9823'
 local gacclist = {gusername1,gusername2}
 --Password List
 local PassListDis=gg.makeRequest('https://raw.githubusercontent.com/samsamlausam/Script/master/PassDisAuth.Lua')
-local WrongDisPhoto='https://78.media.tumblr.com/73eea773f3d6e739ba800a3317929694/tumblr_inline_mtk5zkUL0L1qersu1.png'
 local PassAuthDis=load(PassListDis.content)
 if PassAuthDis==nil then os.exit() end
 PassAuthDis()
@@ -27,7 +26,7 @@ gg.alert('Bad beavior detected.','') os.exit() end
 function badauth() 
 if GoodAuth ==1 or GoodAuth == 2 then end
 if gtrychance ==0 then
-Brocastsos="username=⚠!!!WARNING!!!⚠&avatar_url="..WrongDisPhoto..os.date"&content=[%d-%Y][%H:%M] SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!     @DESPAC1T0" 
+Brocastsos=os.date"username=⚠!!!WARNING!!!⚠&avatar_url="..WrongDisPhoto.."&content=[%d-%Y][%H:%M] SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!" 
 gg.makeRequest(Brocast,nil,Brocastsos) 
 gg.toast('WRONG!\nYour Password not correct.')
 forceexit() end end
