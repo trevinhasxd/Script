@@ -1,3 +1,4 @@
+iwannagobacktomenu=0
 HOME = 1
 function HOME()
   HM = gg.choice({
