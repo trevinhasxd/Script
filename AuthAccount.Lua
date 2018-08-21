@@ -26,7 +26,7 @@ gg.alert('Bad beavior detected.','') os.exit() end
 function badauth() 
 if GoodAuth ==1 or GoodAuth == 2 then end
 if gtrychance ==0 then
-Brocastsos=os.date"username=⚠!!!WARNING!!!⚠&content=[%d-%Y][%H:%M] SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!" 
+Brocastsos=os.date"username=⚠!!!WARNING!!!⚠&avatar_url="..WrongDisPhoto.."&content=[%d-%Y][%H:%M] SOMEONE is trying to login to the server!The Account he used: "..DisAuthAcc..". Password he typed: "..AuthKeyA[1]..". Please be careful!If nesscessy,please freeze the Script!" 
 gg.makeRequest(Brocast,nil,Brocastsos) 
 gg.toast('WRONG!\nYour Password not correct.')
 forceexit() end end
