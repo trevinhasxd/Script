@@ -8,14 +8,16 @@ local webhook5='https://discordapp.com/api/webhooks/480748779545559041/UbXCzW-Pk
 function cancelenv()
 end
 function PUBG()
-gg.toast('Loading...')
+gg.toast('Loading...\nThe Script i is free go get if you can get it.')
+iwannagobackmenu=0
 local gkslgsdh='https://raw.githubusercontent.com/samsamlausam/Script/master/PUBGLUAREL.Lua'
-local iafkfgh=gg.makeRequest(gkslgsdh)
-local jfkgagru=load(iafkfgh.content)
+iafkfgh=gg.makeRequest(gkslgsdh)
+jfkgagru=load(iafkfgh.content)
 if jfkgagru==nil then gg.toast('File not found.Report to Owner.') gg.sleep(700) goto chdjdb end
 if jfkgagru~=nil then
-jfkgagru() end
-gg.alert('If you see this message please report to owner with code:PUER','')
+ghjhhnj=1
+jfkgagru()
+ end
 ::chdjdb::
 end
  
