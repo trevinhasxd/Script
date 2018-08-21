@@ -12,7 +12,8 @@ gg.toast('Loading...')
 local gkslgsdh='https://raw.githubusercontent.com/samsamlausam/Script/master/PUBGLUAREL.Lua'
 local iafkfgh=gg.makeRequest(gkslgsdh)
 local jfkgagru=load(iafkfgh.content)
-if jfkgagru==nil then gg.toast('File not found.Report to Owner.') gg.sleep(700) goto chdjdb else
+if jfkgagru==nil then gg.toast('File not found.Report to Owner.') gg.sleep(700) goto chdjdb end
+if jfkgagru~=nil then
 jfkgagru() end
 gg.alert('If you see this message please report to owner with code:PUER','')
 ::chdjdb::
