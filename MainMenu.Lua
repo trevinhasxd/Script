@@ -6,16 +6,10 @@ local webhook3='https://discordapp.com/api/webhooks/480749094474874885/TPcOWHuEn
 local webhook4='https://discordapp.com/api/webhooks/480749005450772491/hqHcLPMijBFH3wLTwweY32tdvRcTcP8n18xPe4Scx6ocni64MaS4Kt-Ebl5dAb9kcOGc'
 local webhook5='https://discordapp.com/api/webhooks/480748779545559041/UbXCzW-PkpVlZ9v2Wo2L6_LyQ3XTK216gBfh8gcBGwxrEwHzFfgPO75FgowhOl6VMJfU'
 function cancelenv()
+ 
 end
 function PUBG()
-gg.toast('Loading...')
-local gkslgsdh='https://raw.githubusercontent.com/samsamlausam/Script/master/PUBLUAREL.Lua'
-local iafkfgh=gg.makeRequest(gkslgsdh)
-local jfkgagru=load(gkslgsdh.content)
-if jfkgagru==nil then gg.toast('File not found.Report to Owner.')
-jfkgagru()
-gg.alert('If you see this message please report to owner with code:PUER','')
-if
+gg.alert('Preview Script,Not set up yet.')
 end
  
 function CJZC()
