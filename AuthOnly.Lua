@@ -14,7 +14,7 @@ end
 first2()
 end
 end
-if cloudata== '5648'
+if cloudata[1]== '5648'
 then Run_to_menu()
 else
     gg.toast('Vailding Code....')
