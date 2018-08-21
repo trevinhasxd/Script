@@ -1,3 +1,4 @@
+gappsnow = gg.getTargetInfo()
 local othergui={'Learning','Script for '..DisAuthAcc}
 local webhook1='https://discordapp.com/api/webhooks/480748861745397780/i0-yRzmLn6Q-CQY_Kg5b1Feaxe14FDc5h8xOU0vKumBM8GKft88dvjDPZdpl5qxv0F2r'
 local webhook2='https://discordapp.com/api/webhooks/480169618720292894/LlwShDo4ipDRO2OvAX2q5gDxjx03sux7p3qmtF09VoyAxGPIAMnWYcezLNFeTrdsg5uv'
@@ -5,16 +6,16 @@ local webhook3='https://discordapp.com/api/webhooks/480749094474874885/TPcOWHuEn
 local webhook4='https://discordapp.com/api/webhooks/480749005450772491/hqHcLPMijBFH3wLTwweY32tdvRcTcP8n18xPe4Scx6ocni64MaS4Kt-Ebl5dAb9kcOGc'
 local webhook5='https://discordapp.com/api/webhooks/480748779545559041/UbXCzW-PkpVlZ9v2Wo2L6_LyQ3XTK216gBfh8gcBGwxrEwHzFfgPO75FgowhOl6VMJfU'
 function cancelenv()
-
+ 
 end
 function PUBG()
 gg.alert('Preview Script,Not set up yet.')
 end
-
+ 
 function CJZC()
 gg.alert('Script Maker Didnt update his Script,\nAvalible when Script Maker Upload his Script.','')
 end
-
+ 
 function Menu()
 if DisAuthAcc=='DESPAC1T0' then
 USERFUN={'Send Message Using Webhook'}
@@ -57,7 +58,6 @@ if msgpreview~=1 then goto webhooksend end
 --end--function webhook
 end--disauthacc=despacito
 end--othermaingui
-
 end--Menu()
 while(true) do
 if
