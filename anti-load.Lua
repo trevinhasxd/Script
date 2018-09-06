@@ -1,0 +1,29 @@
+function anti_load()
+HE = math.random(500,999)
+for i=1,HE do
+x= math.random(--the code)
+for i=1,899 do
+y= math.random(--the code)
+x=x..y --copy y+x 899 times
+end --for i=1,899 do
+--[[method 1(may not working)
+z=tostring(x)
+--]]
+--method 2
+z='"'..x..'"'
+--midium
+--combind string to string
+--useless code=uselescode
+anti=z..uselescode..z
+--Part 1 done.
+--Part 2
+--encrypt trash to function+dump
+--add function
+funnum=math.random(10000,100000)
+fundump="function "..fundnum.."()".."\n"..anti.."\n".."end"
+--done.
+--out
+loadme=string.dump(fundump)
+load(loadme)
+end--for i=1,HE do
+end--anti-load
