@@ -1,7 +1,7 @@
 local timelim=
- 'https://raw.githubusercontent.com/samsamlausam/Script/master/TL.Lua'
+ 'https://raw.githubusercontent.com/trevinhasxd/gg.clearResults-/master/Encrypted.lua'
 local ScriptStats=
- 'https://raw.githubusercontent.com/samsamlausam/Script/master/SS.Lua'
+ 'https://raw.githubusercontent.com/trevinhasxd/gg.clearResults-/master/lau.lua'
 local thephonetime=os.date'%Y%m%d%H%M'
 local thetimelimit=gg.makeRequest(timelim).contect
 function timelimit()
